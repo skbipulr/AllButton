@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16sp"
+    tools:context=".MainActivity">
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/magic_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:magic_button_size="50dp"
+        app:button_icon_height="25dp"
+        app:button_icon_width="25dp"
+        app:hide_text="Youtube"
+        app:hide_text_size="8dp"
+        app:hide_text_color="@android:color/white"
+        app:button_icon="@drawable/bt"
+        app:icon_button_color="#c94639"
+        app:expandable_area_color="#109d58"
+        >
+    </br.com.bloder.magic.view.MagicButton>
+
+
+    <LinearLayout
+        android:id="@+id/login"
+        android:layout_marginTop="58dp"
+        android:layout_below="@id/magic_parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.shaishavgandhi.loginbuttons.GoogleButton
+            android:id="@+id/btnGG"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="10dp"
+            app:iconSize="30dp"
+            app:roundedCorner="true"
+            app:roundedCornerRadius="75dp"
+
+            />
+
+        <com.shaishavgandhi.loginbuttons.FacebookButton
+            android:id="@+id/btnFB"
+            android:layout_width="75dp"
+            app:roundedCorner="true"
+            app:iconSize="30dp"
+            app:roundedCornerRadius="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <com.shaishavgandhi.loginbuttons.TwitterButton
+            android:id="@+id/btnTWI"
+            android:layout_width="75dp"
+            app:roundedCorner="true"
+            app:iconSize="30dp"
+            app:roundedCornerRadius="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <com.shaishavgandhi.loginbuttons.LinkedInButton
+            android:id="@+id/LinkIn"
+            android:layout_width="75dp"
+            app:roundedCorner="true"
+            app:iconSize="30dp"
+            app:roundedCornerRadius="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/btn_submit"
+        android:layout_width="76dp"
+        android:layout_height="139dp"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:sub_btn_duration="4000" />
+
+</RelativeLayout>
